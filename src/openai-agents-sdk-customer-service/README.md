@@ -7,8 +7,14 @@ It is based on the [cookbook example](https://github.com/openai/openai-agents-py
 ## Features
 
 - **Triage Agent**: The entry point that understands user intent and delegates tasks.
+    - Tools: `faq_lookup_tool`.
+    - Delegates to: `FAQ Agent` or `Seat Booking Agent`.
 - **FAQ Agent**: Answers questions about baggage, seats, and WiFi using a lookup tool.
+    - Tools: `faq_lookup_tool`.
+    - Delegates to: `Triage Agent` if the question is not about baggage, seats, or WiFi.
 - **Seat Booking Agent**: Handles seat updates for passengers.
+    - Tools: `seat_update_tool`.
+    - Delegates to: `Triage Agent` after updating the seat.
 - **Context Management**: Maintains passenger context (name, confirmation number, etc.) across the session.
 
 ## Prerequisites
