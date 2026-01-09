@@ -44,6 +44,8 @@ uv run main.py
 
 Below is an example of a conversation flow with the agents:
 
+```
+
 > hello
 
 [Agent updated: Triage Agent]
@@ -112,3 +114,4 @@ Your seat has been successfully updated to **A15** for confirmation number **ABC
 
 
 You're welcome! Let me know if you need anything else. 😊
+```
