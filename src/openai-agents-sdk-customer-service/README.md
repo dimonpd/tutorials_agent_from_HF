@@ -40,11 +40,26 @@ It is based on the [cookbook example](https://github.com/openai/openai-agents-py
 
 ## Usage
 
-Run the main script to start the interactive demo:
+### Streamlit App (Recommended)
+
+Run the Streamlit interface to see agent handoffs in real-time:
+
+```bash
+uv run streamlit run app.py
+```
+
+### CLI Demo
+
+Run the terminal-based demo:
 
 ```bash
 uv run main.py
 ```
+
+## Tutorial Resources
+
+- **SCRIPT.md** - Video tutorial script covering multi-agent patterns
+- **TEMPLATE.md** - Fill-in template for building your own multi-agent system with AI coding agents
 
 ## Example Interaction
 

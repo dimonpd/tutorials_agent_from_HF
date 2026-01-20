@@ -10,7 +10,7 @@ import os
 import getpass
 from dotenv import load_dotenv
 
-load_dotenv("../../.env")
+load_dotenv()
 
 if "OPENAI_API_KEY" not in os.environ or os.environ["OPENAI_API_KEY"] == "":
     os.environ["OPENAI_API_KEY"] = getpass.getpass("Enter your OpenAI API key: ")
